@@ -3,186 +3,196 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pickswise | Insights Google Ads Casino 2025</title>
+  <title>Pickswise | Casino Ads Dashboard 2025</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Roboto', sans-serif; background-color: #0b0b0b; color: #f0f0f0; }
-    h1, h2, h3 { font-family: 'Press Start 2P', cursive; }
-    .neon-red { color: #ff003c; text-shadow: 0 0 5px #ff003c, 0 0 10px #ff003c, 0 0 20px #ff003c; }
-    .neon-gold { color: #ffb400; text-shadow: 0 0 5px #ffb400, 0 0 10px #ffb400, 0 0 20px #ffb400; }
-    .card { background: linear-gradient(145deg, #1a1a1a, #0f0f0f); border: 2px solid #ff003c; border-radius: 12px; padding: 1.5rem; transition: transform 0.3s; }
-    .card:hover { transform: translateY(-5px); box-shadow: 0 0 15px #ff003c; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0f0f0f;
+      color: #f0f0f0;
+    }
+    h1,h2,h3 { font-weight: 700; }
+    .card {
+      background: linear-gradient(145deg, #1c1c1c, #101010);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: transform 0.4s, box-shadow 0.4s;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(255, 184, 0, 0.5);
+    }
+    .card-flip {
+      perspective: 1000px;
+    }
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+    .card-flip:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      border-radius: 12px;
+    }
+    .card-front {
+      background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
+    }
+    .card-back {
+      background: linear-gradient(135deg, #ffb400, #c17f00);
+      color: #0f0f0f;
+      transform: rotateY(180deg);
+    }
+    .btn-primary {
+      background-color: #ffb400;
+      color: #0f0f0f;
+      font-weight: 700;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      transition: background 0.3s;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .btn-primary:hover {
+      background-color: #ffc950;
+    }
     a { color: #ffb400; text-decoration: underline; }
   </style>
 </head>
-
 <body>
 
   <!-- Header -->
-  <header class="py-12 text-center bg-black border-b border-gray-800">
-    <h1 class="text-4xl neon-red mb-2">Pickswise | Casino Ads Insights 2025</h1>
-    <p class="text-gray-400 max-w-xl mx-auto">Análise de performance, aprendizado e roadmap estratégico para Google Ads focado em Casino nos EUA</p>
+  <header class="py-12 text-center border-b border-gray-800">
+    <h1 class="text-4xl mb-2">Pickswise | Casino Ads Dashboard 2025</h1>
+    <p class="text-gray-400 max-w-xl mx-auto">Insights, benchmarks e roadmap estratégico para Google Ads focado em Casino nos EUA</p>
   </header>
 
-  <!-- Contexto -->
+  <!-- Performance Cards -->
   <section class="max-w-6xl mx-auto px-6 py-12">
-    <h2 class="text-3xl neon-gold mb-4">Contexto & Objetivo</h2>
-    <p class="text-gray-300 leading-relaxed">
-      Campanhas de Google Ads em 2025 focadas em aquisição de jogadores para Casino nos estados regulados. CTRs elevados e volume de leads consistentes, mas conversão para FTD (First Time Depositor) baixa e irregular.  
-      <br><br>
-      O objetivo é melhorar a qualidade de jogadores e maximizar receita real downstream.
-    </p>
-  </section>
-
-  <!-- Performance -->
-  <section class="bg-gray-900 py-12">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl neon-gold mb-6 text-center">Performance 2025 – Casino</h2>
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-        <div class="card text-center">
-          <p class="text-gray-400 text-sm">Impressões</p>
-          <p class="text-3xl neon-red font-bold">99,497</p>
+    <h2 class="text-3xl mb-6 text-yellow-400">Performance 2025 – Casino</h2>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div class="card-flip h-48">
+        <div class="card-inner card">
+          <div class="card-front">
+            <h3 class="text-xl font-bold text-red-400">Impressões</h3>
+            <p class="text-3xl font-bold">99,497</p>
+          </div>
+          <div class="card-back">
+            <p class="font-semibold">Volume total de impressões para campanhas de Casino em 2025.</p>
+          </div>
         </div>
-        <div class="card text-center">
-          <p class="text-gray-400 text-sm">CTR Médio</p>
-          <p class="text-3xl neon-red font-bold">11.86%</p>
+      </div>
+      <div class="card-flip h-48">
+        <div class="card-inner card">
+          <div class="card-front">
+            <h3 class="text-xl font-bold text-red-400">CTR Médio</h3>
+            <p class="text-3xl font-bold">11.86%</p>
+          </div>
+          <div class="card-back">
+            <p class="font-semibold">Indicador de performance de anúncios e copy em relação ao público.</p>
+          </div>
         </div>
-        <div class="card text-center">
-          <p class="text-gray-400 text-sm">Total de Signups</p>
-          <p class="text-3xl neon-red font-bold">197</p>
+      </div>
+      <div class="card-flip h-48">
+        <div class="card-inner card">
+          <div class="card-front">
+            <h3 class="text-xl font-bold text-red-400">Total de Signups</h3>
+            <p class="text-3xl font-bold">197</p>
+          </div>
+          <div class="card-back">
+            <p class="font-semibold">Leads capturados através das campanhas, antes do FTD.</p>
+          </div>
         </div>
-        <div class="card text-center">
-          <p class="text-gray-400 text-sm">Total de FTDs</p>
-          <p class="text-3xl neon-red font-bold">14</p>
+      </div>
+      <div class="card-flip h-48">
+        <div class="card-inner card">
+          <div class="card-front">
+            <h3 class="text-xl font-bold text-red-400">FTDs</h3>
+            <p class="text-3xl font-bold">14</p>
+          </div>
+          <div class="card-back">
+            <p class="font-semibold">Número de First Time Depositors efetivos, métricas reais de receita.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Aprendizados -->
-  <section class="max-w-6xl mx-auto px-6 py-12">
-    <h2 class="text-3xl neon-gold mb-4">Principais Aprendizados</h2>
-    <ul class="list-disc list-inside text-gray-300 space-y-3">
-      <li>CTRs elevados mostram boa adaptação da mensagem ao público-alvo.</li>
-      <li>MI e PA apresentam performance superior a NJ.</li>
-      <li>Keywords genéricas de Casino geram FTDs de maior qualidade.</li>
-      <li>“Free spins” e “no deposit” geram volume, mas pouca receita real.</li>
-      <li>FTDs e receita concentrados em marcas premium (FanDuel, BetMGM).</li>
+  <section class="max-w-6xl mx-auto px-6 py-12 bg-gray-900 rounded-xl">
+    <h2 class="text-3xl mb-6 text-yellow-400">Principais Aprendizados</h2>
+    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300">
+      <li class="card">CTRs elevados mostram boa adaptação da mensagem</li>
+      <li class="card">MI e PA apresentam performance superior a NJ</li>
+      <li class="card">Keywords genéricas de Casino geram FTDs de maior qualidade</li>
+      <li class="card">“Free spins” e “no deposit” geram volume, mas pouca receita</li>
+      <li class="card">FTDs e receita concentrados em marcas premium (FanDuel, BetMGM)</li>
     </ul>
-  </section>
-
-  <!-- Problema -->
-  <section class="bg-gray-900 py-12">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl neon-gold mb-4">Problema Central</h2>
-      <p class="text-gray-300 leading-relaxed">
-        A lacuna principal não é tráfego, mas a jornada **clique → decisão → depósito**.
-      </p>
-      <ul class="list-disc list-inside text-gray-300 mt-4 space-y-2">
-        <li>Filtrar usuários de baixa intenção (apenas atrás de bônus)</li>
-        <li>Suportar decisão antes da redireção para marca</li>
-        <li>Otimizar para valor downstream real, não só conversões superficiais</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Estratégia -->
-  <section class="max-w-6xl mx-auto px-6 py-12">
-    <h2 class="text-3xl neon-gold mb-4">Novo Framework Estratégico</h2>
-    <p class="text-gray-300 leading-relaxed">
-      Google Ads deixa de ser apenas motor de conversão direta e passa a suportar decisão de alta intenção e maximizar receita.
-    </p>
-
-    <div class="mt-6 card">
-      <p class="text-white font-bold mb-2">Funil Antigo</p>
-      <p class="text-gray-400">Google Ads → Página de Ofertas → Marca → FTD</p>
-    </div>
-
-    <div class="mt-4 card border-neon-gold border-2">
-      <p class="neon-gold font-bold mb-2">Funil Novo</p>
-      <p class="text-gray-300">Google Ads → Landing Page de decisão → Marca → FTD → LTV</p>
-    </div>
-  </section>
-
-  <!-- Support decision-making -->
-  <section class="bg-gray-900 py-12">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl neon-gold mb-4">Suportar a Decisão</h2>
-      <p class="text-gray-300 leading-relaxed">
-        Garantir que o utilizador **sinta que já decidiu** antes da redireção.
-      </p>
-      <ul class="list-disc list-inside text-gray-300 mt-4 space-y-2">
-        <li>Micro-decisões (Slots, Fast Payout, Trusted Brand)</li>
-        <li>Recomendações limitadas (1–2 marcas)</li>
-        <li>Trust signals claros (licenciamento, ratings, pagamentos)</li>
-        <li>Pré-objeções filtradas (sem free spins/no deposit)</li>
-        <li>CTA decisivo: “Regista e joga no FanDuel”</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Downstream value -->
-  <section class="max-w-6xl mx-auto px-6 py-12">
-    <h2 class="text-3xl neon-gold mb-4">Otimização para Valor Downstream</h2>
-    <ul class="list-disc list-inside text-gray-300 space-y-2">
-      <li>Focar em FTD por campanha e cluster de keywords</li>
-      <li>Medir receita por depositante (Revenue per Depositor)</li>
-      <li>Importar conversões offline de FTD e receita</li>
-      <li>Reduzir budget em campanhas sem valor</li>
-      <li>Ponderar marcas premium mais alto (FanDuel / BetMGM)</li>
-    </ul>
-  </section>
-
-  <!-- Lead Gen -->
-  <section class="bg-gray-900 py-12">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl neon-gold mb-4">Lead Gen Híbrido</h2>
-      <ul class="list-disc list-inside text-gray-300 space-y-2">
-        <li>Usuário insere email antes de ver recomendações</li>
-        <li>Escolhe a marca preferida imediatamente</li>
-        <li>Redirecionamento imediato para a marca</li>
-        <li>Email usado para follow-up e cross-sell de marcas premium</li>
-      </ul>
-    </div>
   </section>
 
   <!-- Benchmark Concorrentes -->
   <section class="max-w-6xl mx-auto px-6 py-12">
-    <h2 class="text-3xl neon-gold mb-4">Benchmark de Concorrentes – Afiliados</h2>
-    <ul class="list-disc list-inside text-gray-300 space-y-3">
-      <li><strong>PlayUSA.com</strong> – Filtros e comparações que ajudam decisão antes do clique. <a href="https://www.playusa.com/" class="text-neon-gold underline">playusa.com</a></li>
-      <li><strong>GamingToday.com</strong> – Conteúdo educativo, análises e comparações que aumentam confiança antes de redirecionar. <a href="https://www.gamingtoday.com/" class="text-neon-gold underline">gamingtoday.com</a></li>
-      <li><strong>Bonus.com</strong> – Listagens claras de ofertas e promoções que facilitam a escolha. <a href="https://www.bonus.com/" class="text-neon-gold underline">bonus.com</a></li>
-    </ul>
-  </section>
-
-  <!-- Growth levers -->
-  <section class="bg-gray-900 py-12">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl neon-gold mb-4">Novos Eixos de Crescimento</h2>
-      <ul class="list-disc list-inside text-gray-300 space-y-3">
-        <li>Landing pages por intenção (slots, fast payout, high RTP)</li>
-        <li>Filtragem de usuários de baixa intenção (bônus)</li>
-        <li>Campanhas de brand review para intenção avançada</li>
-        <li>Redução de termos “free spins” e “no deposit”</li>
-      </ul>
+    <h2 class="text-3xl mb-6 text-yellow-400">Benchmark de Concorrentes – Afiliados</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="card hover:bg-gray-800 transition">
+        <h3 class="text-xl font-bold mb-2">PlayUSA.com</h3>
+        <p class="text-gray-300">Filtros e comparações que ajudam o utilizador a decidir antes do clique.</p>
+        <a href="https://www.playusa.com/" class="btn-primary mt-4">Visitar</a>
+      </div>
+      <div class="card hover:bg-gray-800 transition">
+        <h3 class="text-xl font-bold mb-2">GamingToday.com</h3>
+        <p class="text-gray-300">Conteúdo educativo, análises e comparações que aumentam confiança antes de redirecionar.</p>
+        <a href="https://www.gamingtoday.com/" class="btn-primary mt-4">Visitar</a>
+      </div>
+      <div class="card hover:bg-gray-800 transition">
+        <h3 class="text-xl font-bold mb-2">Bonus.com</h3>
+        <p class="text-gray-300">Listagens claras de ofertas e promoções que facilitam a escolha e aumentam a conversão.</p>
+        <a href="https://www.bonus.com/" class="btn-primary mt-4">Visitar</a>
+      </div>
     </div>
   </section>
 
-  <!-- Roadmap -->
-  <section class="max-w-6xl mx-auto px-6 py-12">
-    <h2 class="text-3xl neon-gold mb-4">Roadmap de Testes – Q1</h2>
-    <ul class="list-disc list-inside text-gray-300 space-y-3">
-      <li>Foco em estados MI e PA como principais mercados</li>
-      <li>Lançamento de landing pages por intenção de busca genérica</li>
-      <li>Teste de funnel híbrido (email + redirecionamento) para marcas premium</li>
-      <li>Campanhas de brand review para FanDuel e BetMGM</li>
-    </ul>
+  <!-- Lead Gen e Novo Funil -->
+  <section class="max-w-6xl mx-auto px-6 py-12 bg-gray-900 rounded-xl">
+    <h2 class="text-3xl mb-6 text-yellow-400">Lead Gen Híbrido & Novo Funil</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-300">
+      <div class="card">
+        <h3 class="font-bold mb-2">Funil Antigo</h3>
+        <p>Google Ads → Página de Ofertas → Marca → FTD</p>
+      </div>
+      <div class="card">
+        <h3 class="font-bold mb-2">Funil Novo</h3>
+        <p>Google Ads → Landing Page de decisão → Marca → FTD → LTV</p>
+      </div>
+      <div class="card">
+        <h3 class="font-bold mb-2">Lead Gen Híbrido</h3>
+        <p>Usuário insere email, escolhe marca, redirecionamento imediato, e follow-up via email para marcas premium.</p>
+      </div>
+      <div class="card">
+        <h3 class="font-bold mb-2">Otimização Downstream</h3>
+        <p>Foco em FTDs de qualidade e revenue per depositor, importação de conversões offline e priorização de marcas premium.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-black border-t border-gray-800 py-6 text-center text-gray-500 text-sm">
+  <footer class="py-6 text-center text-gray-500">
     Pickswise | Estratégia Google Ads Casino – 2025
   </footer>
 
